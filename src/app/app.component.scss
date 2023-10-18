@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.item{
+  color: black;
+}
+
+.sidebar {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+
+  
+  .itens{
+    border-bottom: 1px solid gray;
+    
+  }
+
+  .SLACA2019{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 220px;
+    height: 68px;
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    color: white;
+  }
+
+  a {
+      color: black;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+
+      &.active {
+          font-weight: bold;
+          color: black;
+      }
+  }
+}
+
+.content {
+  margin-left: 220px;
+}
+
+.content-header {
+  background: rgba(253, 241, 235, 1);
+
+  width: 100vw;
+  height: 70px;
+  left: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  flex-direction: column;
+  position: fixed;
+  top: 0; 
+}
+
+.div-header{
+  color: rgba(114, 92, 92, 1);
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+}
+
+.video{
+  margin-left: 220px;
+  width: 784px;
+  height: 439px;
+  top: 73px;
+  left: 2px;
+
+}
+.paragrafo{
+  margin-top: 100px;
+  margin-left: 220px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 25px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  color: rgba(237, 120, 57, 1);
+
+}
+.content-header h3 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+
+
+}
+
+.content-header h2 {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.content-header h4 {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.retangulo {
+  margin-left: 220px;
+  padding: 10px;
+  width: 1058px;
+  height: 189px;
+  top: 542px;
+  border-radius: 3px;
+  border: 1px;
+
+}
+
+.titulo {
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background: rgba(253, 241, 235, 1);
+  width: 1058px;
+  height: 45px;
+  top: 542px;
+  border-radius: 3px, 3px, 0px, 0px;
+  border: 1px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.conteudo {
+  text-align: left;
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+  text-align: left;
+
+}
+
+#verMaisBtn {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#textoOculto {
+  display: none;
+}
+
+.oculto {
+  display: none;
+}
+
+.icons{
+  text-align: center;
+}
+.paragrafo-discussao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(237, 120, 57, 1);
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+.botao-laranja {
+  width: 133px;
+  height: 32px;
+  top: 1007px;
+  left: 463px;
+  border-radius: 1px;
+  background: linear-gradient(180deg, #FEB254 0%, #F0813D 100%);
+  color: rgba(255, 255, 255, 1);
+  font-family: Quicksand;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: none;
+
+}
