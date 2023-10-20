@@ -1,57 +1,161 @@
-
-<div class="sidebar">
+<div class="container">
+  <div class="sidebar">
     <nav>
       <div class="SLACA2019">
         <h2>SLACA 2019</h2>
       </div>
       <div class="img-logo">
-        <img src="assets/logo.png" alt="Logo da Empresa" width="220" height="258">
+        <img
+          src="assets/logo.png"
+          alt="Logo da Empresa"
+          width="220"
+          height="258"
+        />
       </div>
-      <div>
-        <a  class="itens" href="#" >Apresentação</a>
-        <a  class="itens" href="#">Comitês</a>
-        <a  class="itens" href="#">Autores</a>
-        <a  class="itens" href="#">Eixos Temáticos</a>
-        <a  class="itens" href="#">Trabalhos</a>
-        <a  class="itens" href="#">Contato</a>
-      </div>
-    </nav>
-</div>
-<div>
-  <div class="content-header">
-    <h3 class="div-header">Anais do Simpósio Simpósio Latino Americano de Ciências de Alimentos</h3>
-    <h2 class="div-header">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h2>
-    <h4 class="div-header">ISSN: 1234-5678</h4>
-  </div>
-  <div>
-    <p class="paragrafo">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, do município de Campinas/SP </p>
-    <img class="video" src="assets/vídeo.png" alt="video de apresentação">
-  </div>
-  
-    
-  <div class="retangulo">
-    <div class="titulo">Resumo</div>
-      <div class="conteudo">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem vestibulum ut.  Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.  Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant... ver mais</p>
-          <button (click)="verMais()" id="verMaisBtn">Ver Mais</button>
-          <p id="textoOculto" [class.oculto]="!mostrarTexto">Texto adicional que será exibido quando "Ver Mais" for clicado.</p>
-      </div>
-  </div>
-  
-  <div class="retangulo discussao">
-    <div class="titulo">Discussões</div>
-    <div class="conteudo">
-        <p class="paragrafo-discussao">Compartilhe suas ideias ou dúvidas com os autores!</p>
-        <div class="icons">
-          <img src="assets/icone1.png" width="50.26" height="48.94"  alt="Ícone 1">
-          <img src="assets/icone2.png" width="50.26" height="48.94"  alt="Ícone 2">
-          <img src="assets/icone3.png" width="50.26" height="48.94"  alt="Ícone 3">
+
+      <nav class="side-menu">
+        <img src="../assets/dewey 4.png" alt="" />
+        <div class="links-container">
+          <div class="link"><a href="#">Apresentação</a></div>
+          <div class="link"><a href="#">Comitês</a></div>
+          <div class="link"><a href="#">Autores</a></div>
+          <div class="link"><a href="#">Eixos temáticos</a></div>
+          <div class="link active"><a href="#">Trabalhos</a></div>
+          <div class="link"><a href="#">Contato</a></div>
         </div>
-        <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
-        <hr>
-        <button class="botao-laranja">+ Tópico</button>
+      </nav>
+    </nav>
+  </div>
+
+  <div>
+    <header id="header">
+      <div class="container">
+        <div class="topic">
+          Anais do Simpósio Latino Americano de Ciências de Alimentos
+        </div>
+        <div class="topic topic-title">
+          Anais do 13º Simpósio Latino Americano de Ciência de Alimentos
+        </div>
+        <div class="topic topic-code">ISSN: 1234-5678</div>
+      </div>
+      <div class="right-side-header">
+        <div class="languages">
+          <select name="language" id="language">
+            <option value="pt-br">PT, BR</option>
+            <option value="en-us">EN, US</option>
+          </select>
+        </div>
+        <div class="user-container">
+          <div>
+            <div class="welcome-text">Bem vinda!</div>
+            <div class="user-email">analebprince@gmail.com</div>
+          </div>
+          <div>
+            <img
+              class="picture-analeb"
+              src="../assets/analebprince.jpeg"
+              alt="user_pic"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="introduction">
+      <div class="introduction-first">
+        <p class="paragrafo">
+          Análise sensorial de preparações funcionais desenvolvidas para
+          escolares entre 09 e 15 anos, do município de Campinas/SP
+        </p>
+        <img class="video" src="assets/vídeo.png" alt="video de apresentação" />
+      </div>
+
+      <div class="details-container">
+        <div class="details-title">Detalhes</div>
+        <div class="details-content">
+          <div class="poster">
+            <p>Tipo de Apresentação: <strong>Pôster</strong></p>
+            <p>Eixo temático: <strong>Alimentação e saúde (AS) </strong></p>
+            <p>
+              Palavras-chave:
+              <strong>Alimentos funcionais, alimentação escolar.</strong>
+            </p>
+          </div>
+          <div class="autors">
+            <p><strong>Autores:</strong></p>
+            <p>Galileo Galilei¹</p>
+            <p>Berta Lange de Morretes²</p>
+            <p>Isaac Newton³</p>
+            <p>Cesar Lattes¹</p>
+            <p>Stephen Hawking⁴</p>
+          </div>
+          <div class="universities">
+            <p>¹Universidade Estadual de Campinas</p>
+            <p>²Universidade de São Paulo</p>
+            <p>³Instituto Nacional de Pesquisas Espaciais</p>
+            <p>⁴Universidade Federal do Rio de Janeiro</p>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-</div>
 
+    <div class="retangulo">
+      <div class="titulo">Resumo</div>
+      <div class="conteudo">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+          vitae turpis auctor, mollis felis ut, commodo turpis. Phasellus felis
+          mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros
+          sed magna ultricies gravida. Etiam aliquam dictum nisl, vel aliquet
+          enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem
+          vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis
+          et non lorem. Sed id nisl metus. Quisque sollicitudin ligula in sapien
+          scelerisque, ac gravida eros vestibulum Phasellus condimentum orci id
+          leo condimentum lobortis et non lorem. Sed id nisl metus. Quisque
+          sollicitudin ligula in sapien scelerisque, ac gravida eros vestibulum.
+          Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl
+          accumsant... ver mais
+        </p>
+        <button (click)="verMais()" id="verMaisBtn">Ver Mais</button>
+        <p id="textoOculto" [class.oculto]="!mostrarTexto">
+          Texto adicional que será exibido quando "Ver Mais" for clicado.
+        </p>
+      </div>
+    </div>
 
+    <div class="retangulo discussao">
+      <div class="titulo">Discussões</div>
+      <div class="conteudo">
+        <p class="paragrafo-discussao">
+          Compartilhe suas ideias ou dúvidas com os autores!
+        </p>
+        <div class="icons">
+          <img
+            src="assets/icone1.png"
+            width="50.26"
+            height="48.94"
+            alt="Ícone 1"
+          />
+          <img
+            src="assets/icone2.png"
+            width="50.26"
+            height="48.94"
+            alt="Ícone 2"
+          />
+          <img
+            src="assets/icone3.png"
+            width="50.26"
+            height="48.94"
+            alt="Ícone 3"
+          />
+        </div>
+        <p>
+          Sabia que o maior estímulo no desenvolvimento científico e cultural é
+          a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
+        </p>
+        <hr />
+        <button class="botao-laranja">+ Tópico</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -9,6 +9,101 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.container{
+  display: flex;
+}
+
+#header {
+  grid-area: header;
+  background: #fdf1eb;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 36px;
+  display: flex;
+  // margin-left: 185px;
+}
+
+.topic-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.topic {
+  color: #725c5c;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.topic-title {
+  font-size: 22px;
+}
+
+.right-side-header {
+  display: flex;
+  gap: 30px;
+}
+
+select {
+  padding: 5px 25px 5px 5px;
+  background: transparent;
+  color: #333;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem top 50%;
+  background-size: 0.5rem auto;
+  outline: none;
+}
+
+.user-container {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.welcome-text {
+  color: #333;
+  text-align: right;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.user-email {
+  color: #333;
+  text-align: right;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.user-picture {
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
 .item{
   color: black;
 }
@@ -20,7 +115,7 @@ body {
   align-items: center;
   height: 100%;
   width: 220px;
-  position: fixed;
+  // position: fixed;
   top: 0;
   left: 0;
   background-color: white;
@@ -56,7 +151,7 @@ body {
 }
 
 .content {
-  margin-left: 220px;
+  // margin-left: 220px;
 }
 
 .content-header {
@@ -83,17 +178,8 @@ body {
   letter-spacing: 0em;
 }
 
-.video{
-  margin-left: 220px;
-  width: 784px;
-  height: 439px;
-  top: 73px;
-  left: 2px;
-
-}
 .paragrafo{
-  margin-top: 100px;
-  margin-left: 220px;
+  // margin-left: 220px;
   font-family: Roboto;
   font-size: 20px;
   font-weight: 900;
@@ -135,9 +221,9 @@ body {
 }
 
 .retangulo {
-  margin-left: 220px;
+  // margin-left: 220px;
   padding: 10px;
-  width: 1058px;
+  width: 100%;
   height: 189px;
   top: 542px;
   border-radius: 3px;
@@ -228,3 +314,218 @@ body {
   border: none;
 
 }
+.introduction{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.introduction-second{
+  width: 40%;
+  display: flex;
+  align-items: center;
+
+}
+.retangulo-second{
+  width: 40%;
+}
+
+.detalhes-div{
+  width: 100%;
+}
+
+.titulo-second{
+  
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  background: rgba(253, 241, 235, 1);
+  width: 1058px;
+  height: 45px;
+  top: 542px;
+  border-radius: 3px, 3px, 0px, 0px;
+  border: 1px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  
+}
+
+.conteudo-second{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  
+}
+
+
+
+
+
+/*daqui*/
+
+.side-menu {
+  grid-area: side-menu;
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.links-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  position: relative;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-bottom: 2px solid rgb(189, 189, 189);
+}
+
+.link a {
+  text-decoration: none;
+  color: #725c5c;
+}
+
+.link:hover,
+.link.active {
+  background: #fdf1eb;
+}
+
+.link.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg, #ffb455 0%, #ed7839 100%);
+}
+
+#content {
+  grid-area: content;
+  padding: 20px 45px;
+}
+
+.picture-analeb{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.video-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.video {
+  width: 80%;
+  // margin-left: 198px;
+}
+
+
+.overlay {
+  padding: 35px 30px 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  background: rgba(141, 53, 6, 0.5);
+  width: 100%;
+  height: 99%;
+}
+
+
+
+.details-container,
+.summary-container,
+.discussion-container {
+  border-radius: 3px;
+  border: 1px solid #ececec;
+}
+
+.details-container {
+  width: 250px;
+}
+
+.discussion-container {
+  margin-bottom: 30px;
+}
+
+.summary-container {
+  margin-bottom: 30px;
+}
+
+.details-title,
+.summary-title,
+.discussion-title {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  height: 45px;
+  color: #4e4e4e;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 125% */
+  border-radius: 3px 3px 0px 0px;
+  border: 1px solid #ececec;
+  background: #fdf1eb;
+}
+
+.details-content {
+  display: grid;
+  height: calc(100% - 45px);
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.poster {
+  color: #5c5c5c;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 120%;
+  letter-spacing: 0.24px;
+}
+
+.autors {
+  color: #5c5c5c;
+  font-family: Quicksand;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 120%;
+  letter-spacing: 0.28px;
+}
+
+.universities {
+  color: #ada0a0;
+  font-family: Quicksand;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0.24px;
+}
+
+
+
+
+
+
+
+
+
+
